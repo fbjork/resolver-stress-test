@@ -1,0 +1,87 @@
+type Address @model {
+  customer: Customer!
+  company: String
+  firstName: String!
+  lastName: String!
+  street1: String!
+  street2: String
+  city: String!
+  country: String!
+  zip: String!
+}
+
+type Cart @model {
+  customer: Customer
+  order: Order
+  lineItems: [LineItem]
+  shippingTotal: Float!
+  discountTotal: Float!
+  total: Float!
+  currency: String!
+}
+
+type Customer @model {
+  firstName: String!
+  lastName: String!
+  email: Email! @unique
+  phoneNumber: String
+  billingAddress: Address
+  avatar1: String @resolver(name: "a/avatar1")
+  avatar2: String @resolver(name: "a/avatar2")
+  avatar3: String @resolver(name: "a/avatar3")
+  avatar4: String @resolver(name: "a/avatar4")
+  avatar5: String @resolver(name: "a/avatar5")
+  avatar6: String @resolver(name: "a/avatar6")
+  avatar7: String @resolver(name: "a/avatar7")
+  avatar8: String @resolver(name: "a/avatar8")
+  avatar9: String @resolver(name: "a/avatar9")
+  avatar10: String @resolver(name: "a/avatar10")
+  avatar11: String @resolver(name: "a/avatar11")
+  avatar12: String @resolver(name: "a/avatar12")
+  avatar13: String @resolver(name: "a/avatar13")
+  avatar14: String @resolver(name: "a/avatar14")
+  avatar15: String @resolver(name: "a/avatar15")
+  avatar16: String @resolver(name: "a/avatar16")
+  avatar17: String @resolver(name: "a/avatar17")
+  avatar18: String @resolver(name: "a/avatar18")
+  avatar19: String @resolver(name: "a/avatar19")
+  avatar20: String @resolver(name: "a/avatar20")
+  avatar21: String @resolver(name: "a/avatar21")
+  avatar22: String @resolver(name: "a/avatar22")
+  avatar23: String @resolver(name: "a/avatar23")
+  avatar24: String @resolver(name: "a/avatar24")
+  avatar25: String @resolver(name: "a/avatar25")
+}
+
+type Order @model {
+  cart: Cart
+  lineItems: [LineItem]
+  shippingTotal: Float!
+  discountTotal: Float!
+  total: Float!
+  currency: String!
+}
+
+type LineItem @model {
+  order: Order!
+  variant: Variant!
+  quantity: Int!
+}
+
+type Product @model {
+  title: String!
+  imageUrl: URL!
+  description: String!
+  stock: Int!
+  slug: String! @unique
+  variants: [Variant]
+  brand: String
+}
+
+type Variant @model {
+  title: String!
+  product: Product!
+  sku: String!
+  price: Float!
+  currency: String!
+}
