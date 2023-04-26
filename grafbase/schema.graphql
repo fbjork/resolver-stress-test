@@ -60,6 +60,31 @@ type Order @model {
   discountTotal: Float!
   total: Float!
   currency: String!
+  avatar26: String @resolver(name: "b/avatar26")
+  avatar27: String @resolver(name: "b/avatar27")
+  avatar28: String @resolver(name: "b/avatar28")
+  avatar29: String @resolver(name: "b/avatar29")
+  avatar30: String @resolver(name: "b/avatar30")
+  avatar31: String @resolver(name: "b/avatar31")
+  avatar32: String @resolver(name: "b/avatar32")
+  avatar33: String @resolver(name: "b/avatar33")
+  avatar34: String @resolver(name: "b/avatar34")
+  avatar35: String @resolver(name: "b/avatar35")
+  avatar36: String @resolver(name: "b/avatar36")
+  avatar37: String @resolver(name: "b/avatar37")
+  avatar38: String @resolver(name: "b/avatar38")
+  avatar39: String @resolver(name: "b/avatar39")
+  avatar40: String @resolver(name: "b/avatar40")
+  avatar41: String @resolver(name: "b/avatar41")
+  avatar42: String @resolver(name: "b/avatar42")
+  avatar43: String @resolver(name: "b/avatar43")
+  avatar44: String @resolver(name: "b/avatar44")
+  avatar45: String @resolver(name: "b/avatar45")
+  avatar46: String @resolver(name: "b/avatar46")
+  avatar47: String @resolver(name: "b/avatar47")
+  avatar48: String @resolver(name: "b/avatar48")
+  avatar49: String @resolver(name: "b/avatar49")
+  avatar50: String @resolver(name: "b/avatar50")
 }
 
 type LineItem @model {
