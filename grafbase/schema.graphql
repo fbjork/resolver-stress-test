@@ -51,15 +51,6 @@ type Customer @model {
   avatar23: String @resolver(name: "a/avatar23")
   avatar24: String @resolver(name: "a/avatar24")
   avatar25: String @resolver(name: "a/avatar25")
-}
-
-type Order @model {
-  cart: Cart
-  lineItems: [LineItem]
-  shippingTotal: Float!
-  discountTotal: Float!
-  total: Float!
-  currency: String!
   avatar26: String @resolver(name: "b/avatar26")
   avatar27: String @resolver(name: "b/avatar27")
   avatar28: String @resolver(name: "b/avatar28")
@@ -85,6 +76,40 @@ type Order @model {
   avatar48: String @resolver(name: "b/avatar48")
   avatar49: String @resolver(name: "b/avatar49")
   avatar50: String @resolver(name: "b/avatar50")
+}
+
+type Order @model {
+  cart: Cart
+  lineItems: [LineItem]
+  shippingTotal: Float!
+  discountTotal: Float!
+  total: Float!
+  currency: String!
+  avatar51: String @resolver(name: "c/avatar51")
+  avatar52: String @resolver(name: "c/avatar52")
+  avatar53: String @resolver(name: "c/avatar53")
+  avatar54: String @resolver(name: "c/avatar54")
+  avatar55: String @resolver(name: "c/avatar55")
+  avatar56: String @resolver(name: "c/avatar56")
+  avatar57: String @resolver(name: "c/avatar57")
+  avatar58: String @resolver(name: "c/avatar58")
+  avatar59: String @resolver(name: "c/avatar59")
+  avatar60: String @resolver(name: "c/avatar60")
+  avatar61: String @resolver(name: "c/avatar61")
+  avatar62: String @resolver(name: "c/avatar62")
+  avatar63: String @resolver(name: "c/avatar63")
+  avatar64: String @resolver(name: "c/avatar64")
+  avatar65: String @resolver(name: "c/avatar65")
+  avatar66: String @resolver(name: "c/avatar66")
+  avatar67: String @resolver(name: "c/avatar67")
+  avatar68: String @resolver(name: "c/avatar68")
+  avatar69: String @resolver(name: "c/avatar69")
+  avatar70: String @resolver(name: "c/avatar70")
+  avatar71: String @resolver(name: "c/avatar71")
+  avatar72: String @resolver(name: "c/avatar72")
+  avatar73: String @resolver(name: "c/avatar73")
+  avatar74: String @resolver(name: "c/avatar74")
+  avatar75: String @resolver(name: "c/avatar75")
 }
 
 type LineItem @model {
